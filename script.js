@@ -15,3 +15,9 @@ function calculate() {
     input.value = "Error";
   }
 }
+function convertToFeet() {
+  const input = document.getElementById("input").value;
+  const feet = Math.floor(input);
+  const inches = Math.round((input - feet) * 12);
+  document.getElementById("input").value = feet + "' " + inches + "\"";
+}
